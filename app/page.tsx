@@ -241,12 +241,6 @@ export default function Home() {
           </div>
         </div>
       )}
-{playMusic && (
-  <audio id="bg-music" autoPlay loop>
-    <source src="/thousand-years.mp3" type="audio/mpeg" />
-    Tu navegador no soporta audio HTML5.
-  </audio>
-)}
 
       {/* Modal Confirmar Asistencia */}
       {showConfirmModal && (
