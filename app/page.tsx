@@ -102,7 +102,7 @@ export default function Home() {
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6xu5vUgSue3yFPzUCy2rnGyfPi5jiP.png",
       alt: "Sarah en su fiesta",
-      year: "2024",
+      year: "2025",
     },
   ]
 
@@ -244,8 +244,7 @@ const enterWithMusic = () => {
 {playMusic && (
   <audio autoPlay loop id="bg-music">
     <source
-      src="https://docs.google.com/uc?export=download&id=1Pe9-Zv5szk2qUBPeb_Q3z-E05QqViqSX"
-      type="audio/mpeg"
+    src="/musica.mp3" type="audio/mpeg"
     />
     Tu navegador no soporta audio HTML5.
   </audio>
@@ -434,24 +433,6 @@ const enterWithMusic = () => {
             </div>
           </div>
         </div>
-      )}
-
-      {playMusic && (
-        <audio
-          ref={(audio) => {
-            if (audio) {
-              audio.volume = 0.4
-              if (!isMuted) {
-                audio.play().catch(console.log)
-              }
-            }
-          }}
-          loop
-          muted={isMuted}
-          className="hidden"
-        >
-          <source src="/musica.mp3" type="audio/mpeg" />
-        </audio>
       )}
 
       {/* Botón de silenciar música */}
@@ -1087,30 +1068,31 @@ const enterWithMusic = () => {
               <h4 className="text-3xl font-serif text-white mb-3 font-bold">Sarah Edith</h4>
               <h5 className="text-red-200 text-xl">Mis 15 años</h5>
             </div>
-            <div className="text-center md:text-right transition-all duration-800 delay-300 opacity-100 translate-x-0 animate-fade-in-right">
-              <div className="space-y-3 text-red-200">
-                <button
-                  onClick={() => setShowConfirmModal(true)}
-                  className="block hover:text-white cursor-pointer transition-colors animate-link-hover"
-                >
-                  Confirmar asistencia a fiesta
-                </button>
-                <button
-                  onClick={() => setShowMusicModal(true)}
-                  className="block hover:text-white cursor-pointer transition-colors animate-link-hover"
-                >
-                  Sugerir canción
-                </button>
-                <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fiesta%20de%2015%20años%20de%20Sarah%20Edith&dates=20250628T190000/20250629T020000&details=Te%20espero%20para%20compartir%20la%20alegría%20de%20esa%20noche%20que%20será%20para%20mí%20mágica,%20inolvidable%20y%20única.&location=Salón%20Romano%20-%20Absolut,%20Av%20NQS%20No.1-79,%20Bogotá"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block hover:text-white cursor-pointer transition-colors animate-link-hover"
-                >
-                  Agendar Fiesta
-                </a>
-              </div>
+          <div className="transition-all duration-800 delay-300 opacity-100 translate-x-0 animate-fade-in-right">
+            <div className="flex flex-col md:items-end items-center text-red-200 space-y-3">
+              <button
+                onClick={() => setShowConfirmModal(true)}
+                className="hover:text-white cursor-pointer transition-colors animate-link-hover text-lg"
+              >
+                Confirmar asistencia a la fiesta
+              </button>
+              <button
+                onClick={() => setShowMusicModal(true)}
+                className="hover:text-white cursor-pointer transition-colors animate-link-hover text-lg"
+              >
+                Sugerir canción
+              </button>
+              <a
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fiesta%20de%2015%20años%20de%20Sarah%20Edith&dates=20250628T190000/20250629T020000&details=Te%20espero%20para%20compartir%20la%20alegría%20de%20esa%20noche%20que%20será%20para%20mí%20mágica,%20inolvidable%20y%20única.&location=Salón%20Romano%20-%20Absolut,%20Av%20NQS%20No.1-79,%20Bogotá"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white cursor-pointer transition-colors animate-link-hover text-lg"
+              >
+                Agendar fiesta
+              </a>
             </div>
+          </div>
+
           </div>
           <div className="border-t border-red-800 pt-12 text-center transition-all duration-800 delay-400 opacity-100 translate-y-0 animate-fade-in-up-delayed">
             <p className="text-red-200 text-lg mb-3 font-light italic animate-text-shimmer">
