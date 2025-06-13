@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Sarah Edith (prueba) - Mis 15 años",
+  title: "Sarah Royel - Mis 15 años",
   description: "Invitación a mis 15 años",
   generator: "v0.dev",
 }
