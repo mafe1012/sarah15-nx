@@ -136,20 +136,20 @@ export default function Home() {
     return () => clearInterval(interval)
   }, [])
 
-  const enterWithMusic = async () => {
-    setPlayMusic(true)
-    setShowWelcome(false)
-    // Pequeño delay para asegurar que el audio se cargue
-    setTimeout(() => {
-      const audio = document.querySelector("audio")
-      if (audio) {
-        audio.volume = 0.4
-        audio.play().catch((err) => {
-          console.log("Error playing audio:", err)
-        })
-      }
-    }, 100)
-  }
+const enterWithMusic = () => {
+  setShowWelcome(false)
+  setPlayMusic(true)
+
+  setTimeout(() => {
+    const audio = document.getElementById("bg-music") as HTMLAudioElement | null
+    if (audio) {
+      audio.volume = 0.4
+      audio.play().catch((err) => {
+        console.log("Error reproduciendo audio:", err)
+      })
+    }
+  }, 300) 
+}
 
   const enterWithoutMusic = () => {
     setPlayMusic(false)
@@ -242,12 +242,14 @@ export default function Home() {
         </div>
       )}
 {playMusic && (
-  <audio id="bg-music" autoPlay loop>
-    <source src="/thousand-years.mp3" type="audio/mpeg" />
+  <audio autoPlay loop id="bg-music">
+    <source
+      src="https://docs.google.com/uc?export=download&id=1Pe9-Zv5szk2qUBPeb_Q3z-E05QqViqSX"
+      type="audio/mpeg"
+    />
     Tu navegador no soporta audio HTML5.
   </audio>
 )}
-
       {/* Modal Confirmar Asistencia */}
       {showConfirmModal && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
@@ -447,7 +449,7 @@ export default function Home() {
           muted={isMuted}
           className="hidden"
         >
-          <source src="/audio/background-music.mp3" type="audio/mpeg" />
+          <source src="/musica.mp3" type="audio/mpeg" />
         </audio>
       )}
 
