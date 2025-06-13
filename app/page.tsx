@@ -208,6 +208,7 @@ const enterWithMusic = () => {
               <p className="text-amber-200 mb-3 text-lg font-light animate-fade-in">Bienvenidos a la invitación de</p>
               <h3 className="text-6xl font-serif text-amber-100 mb-8 font-bold animate-fade-in-up tracking-wide">
                 Sarah Edith
+                PRUEBA
               </h3>
               <p className="text-amber-200 mb-10 text-lg font-light animate-fade-in-delayed">
                 La música de fondo es parte de la experiencia
@@ -508,6 +509,7 @@ const enterWithMusic = () => {
               </div>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 text-amber-100 leading-none transition-all duration-1000 delay-800 opacity-100 translate-y-0 animate-text-reveal">
                 Sarah Edith
+                PRUEBA
               </h1>
               <h2 className="text-2xl md:text-3xl font-light mb-12 text-amber-200 transition-all duration-800 delay-1000 opacity-100 translate-y-0">
                 Mis 15 años
@@ -1050,7 +1052,7 @@ const enterWithMusic = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="text-center md:text-left transition-all duration-800 delay-200 opacity-100 -translate-x-0 animate-fade-in-left">
-              <h4 className="text-3xl font-serif text-white mb-3 font-bold">Sarah Edith</h4>
+              <h4 className="text-3xl font-serif text-white mb-3 font-bold">Sarah Edith PRUEBA</h4>
               <h5 className="text-red-200 text-xl">Mis 15 años</h5>
             </div>
           <div className="transition-all duration-800 delay-300 opacity-100 translate-x-0 animate-fade-in-right">
