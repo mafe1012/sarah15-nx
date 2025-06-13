@@ -51,58 +51,47 @@ export default function Home() {
   const photos = [
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.29-af6zGkyWT894vfwJ3FD9VMXhhL5fMl.jpeg",
-      alt: "Sarah recién nacida",
-      year: "2010",
+  
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.28-zNp0E99E6BgdQV8dnZmCZTY26guWD8.jpeg",
-      alt: "Sarah bebé",
-      year: "2010",
+      
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.29%20%282%29-4rIjn84lxDSWfh18rcIFRVxFSLw77m.jpeg",
-      alt: "Sarah dibujando",
-      year: "2011",
+     
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.30%20%281%29-UmRqx2Ot62K4CREzxWHfS0aKO6xYJA.jpeg",
-      alt: "Sarah en la playa",
-      year: "2012",
+     
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.30%20%283%29-5mkLTwYRPPkplf6BKJW0PeFmjI8Fwx.jpeg",
-      alt: "Sarah en la piscina",
-      year: "2013",
+     
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.29%20%283%29-IUtq8pZQGEbc2YD0rnaqo5leKykps4.jpeg",
-      alt: "Sarah con su mascota",
-      year: "2014",
+ 
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.28%20%281%29-IyXeg4BnLHaVYKPGjBhFrnxCVxZfE8.jpeg",
-      alt: "Sarah con su familia",
-      year: "2015",
+  
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.29%20%281%29-Hjqjx0OtqlCe7JLW67hY9p2NO7rVMU.jpeg",
-      alt: "Sarah con uniforme escolar",
-      year: "2016",
+   
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.30-YDAdTk1BjPlyJcDj1QlPmkBy0J4BIH.jpeg",
-      alt: "Sarah con sus padres",
-      year: "2017",
+   
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-10%20at%2015.57.30%20%282%29-O3hXu0psEZdzWe9RnWp2AGFHlaDfvc.jpeg",
-      alt: "Sarah con sus abuelos",
-      year: "2018",
+      
     },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6xu5vUgSue3yFPzUCy2rnGyfPi5jiP.png",
-      alt: "Sarah en su fiesta",
-      year: "2025",
+      
     },
   ]
 
@@ -377,15 +366,11 @@ const enterWithMusic = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                <p>Se solicita puntualidad para la ceremonia de las velas</p>
+                <p>Se solicita puntualidad </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                <p>Habrá servicio de valet parking disponible</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                <p>Para consultas: +57 123 456 7890</p>
+                <p>Habrá servicio de parking disponible</p>
               </div>
             </div>
             <Button
