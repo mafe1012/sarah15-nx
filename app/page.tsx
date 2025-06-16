@@ -168,7 +168,7 @@ const enterWithMusic = () => {
 
 ¡Nos vemos el 28 de junio! 💃✨`
 
-    const whatsappUrl = `https://wa.me/573123456789?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/573142243274?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
     setShowConfirmModal(false)
     setFormData({ name: "", phone: "", guests: "1", song: "", artist: "" })
@@ -183,7 +183,7 @@ const enterWithMusic = () => {
 
 ¡Espero que la incluyan en la playlist! 🎶💃`
 
-    const whatsappUrl = `https://wa.me/573123456789?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/573142243274?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
     setShowMusicModal(false)
     setFormData({ name: "", phone: "", guests: "1", song: "", artist: "" })
